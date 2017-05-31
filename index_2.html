@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+var voices = speechSynthesis.getVoices();
+var utterance = new SpeechSynthesisUtterance('Пацан, который говорил всё на JS');
+utterance.voice = voices[1];
+speechSynthesis.speak(utterance);
+	</script>
+</body>
+</html>
